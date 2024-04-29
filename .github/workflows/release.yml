@@ -28,5 +28,5 @@ jobs:
       - name: Commit new build to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          FOLDER: public
+          FOLDER: dist
               
