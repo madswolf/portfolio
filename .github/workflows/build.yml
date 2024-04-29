@@ -1,0 +1,29 @@
+name: Build
+
+defaults:
+  run:
+    shell: bash
+    
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+
+jobs: 
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+    - run: npm ci
+    
+    - name: Build
+      run: npm run build
