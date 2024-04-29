@@ -1,0 +1,45 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props {
+	tags: string[] | undefined;
+}
+
+const { tags } = Astro.props;
+
+function tagToColor(tag:string){
+	switch(tag.toLocaleLowerCase()){
+		case 'c#':
+			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
+		case 'react':
+			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
+		case 'typescript':
+			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
+		case 'python':
+			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
+		case 'java':
+			return {color:"#01C27E", backgroundColor:"#01c27e1a"};	
+		case 'f#':
+			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
+		case 'sql':
+			return {color:"#027BCE", backgroundColor:"#4BB3FD1A"};
+		}
+}
+
+
+const container = tags?.map((tag) => ({tag:tag, colors:tagToColor(tag) }))
+
+---
+
+<span>
+    {
+		container?.map((container) => (<span style=`color:${container.colors?.color}; background-color:${container.colors?.backgroundColor} `>{container.tag}</span>))
+	}
+</span>
+<style>
+	span {
+  		cursor: default;
+		border-radius: 5px;
+  		padding: 5px 10px;
+	}
+</style>
