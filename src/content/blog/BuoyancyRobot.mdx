@@ -1,0 +1,18 @@
+---
+title: 'Buoyancy-Regulating Robot'
+description: 'A robot used to locate liquid-liquid interfaces by regulating the robots volume and embedded electromechanical actuation.'
+pubDate: 'Jun 15 2023'
+heroImage: '/model.png'
+tags: ["C", "3D Modeling", "Robotics"]
+---
+import { YouTube } from 'astro-embed';
+
+This robot was created as a part of my master's thesis which centered around locating liquid-liquid interfaces. The Robot changes it's own volume to change its buoyancy to achieve upward and downward thrust depending on its current size.
+
+Here is a demo of the Robot in action:
+<YouTube id="https://youtu.be/WlTvShQmrV8" />
+
+Aside from the novel form of locomotion, we also used the pressure difference between two probes to determine the density of the liquid the robot was submerged in. This density was then used, along with an absolute pressure reading, to determine the robots current depth in that liquid.
+This is even possible to do for many distinct liquid phases, given that the top most phase can submerge the entire differential pressure sensor assembly.
+
+This project posed many challenges of physics, 3D modeling, water tightening, and algorithms. They taught me a lot about how important traditional science with formulas can be leveraged to improve designs, and how difficult underwater mechanics really is.
