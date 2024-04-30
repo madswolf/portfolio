@@ -12,17 +12,21 @@ function tagToColor(tag:string){
 		case 'c#':
 			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
 		case 'react':
-			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
+			return {color:"#5cc8ff", backgroundColor:"#5cc8ff1a"};
+		case 'javascript':
+			return {color:"#EED91B", backgroundColor:"#F4E76E1a"};
 		case 'typescript':
-			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
+			return {color:"#00b8d9", backgroundColor:"#00b8d91a"};
 		case 'python':
-			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
+			return {color:"#62D61F", backgroundColor:"#62D61F1a"};
 		case 'java':
 			return {color:"#01C27E", backgroundColor:"#01c27e1a"};	
 		case 'f#':
 			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
 		case 'sql':
 			return {color:"#027BCE", backgroundColor:"#4BB3FD1A"};
+		case 'rust':
+			return {color:"#f46623", backgroundColor:"#f466231a"};
 		}
 }
 
@@ -31,15 +35,20 @@ const container = tags?.map((tag) => ({tag:tag, colors:tagToColor(tag) }))
 
 ---
 
-<span>
+<div>
     {
-		container?.map((container) => (<span style=`color:${container.colors?.color}; background-color:${container.colors?.backgroundColor} `>{container.tag}</span>))
+		container?.map((container) => (
+			<span style=`color:${container.colors?.color}; background-color:${container.colors?.backgroundColor} `>
+			{container.tag}
+			</span>
+		))
 	}
-</span>
+</div>
 <style>
 	span {
   		cursor: default;
 		border-radius: 5px;
   		padding: 5px 10px;
+		margin:5px;
 	}
 </style>
