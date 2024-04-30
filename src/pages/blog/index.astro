@@ -21,8 +21,10 @@ const posts = (await getCollection('blog')).sort(
 				width: 960px;
 			}
 			a {
-				border-radius: 0.9rem;
+				border-radius: 13px;
 				border-width: 3px;
+				border-style: solid;
+				border-color: #878E88;
 			}
 			img {
   				border-radius: 10px 10px 0px 0px;
@@ -72,7 +74,7 @@ const posts = (await getCollection('blog')).sort(
 			ul li a:hover .date {
 				color: rgb(var(--accent));
 			}
-			ul a:hover img {
+			ul a:hover {
 				box-shadow: var(--box-shadow);
 			}
 			@media (max-width: 720px) {

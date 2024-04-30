@@ -20,7 +20,7 @@ function tagToColor(tag:string){
 		case 'python':
 			return {color:"#62D61F", backgroundColor:"#62D61F1a"};
 		case 'java':
-			return {color:"#01C27E", backgroundColor:"#01c27e1a"};	
+			return {color:"#9B7746", backgroundColor:"#9B77461a"};	
 		case 'f#':
 			return {color:"#01C27E", backgroundColor:"#01c27e1a"};
 		case 'sql':
@@ -45,10 +45,13 @@ const container = tags?.map((tag) => ({tag:tag, colors:tagToColor(tag) }))
 	}
 </div>
 <style>
+	div {
+		display: flexbox;
+	}
 	span {
-  		cursor: default;
+		display: inline-block;
 		border-radius: 5px;
   		padding: 5px 10px;
-		margin:5px;
+		margin: 5px;
 	}
 </style>
