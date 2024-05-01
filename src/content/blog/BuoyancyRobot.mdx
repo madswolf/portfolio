@@ -6,13 +6,38 @@ heroImage: '/model.png'
 tags: ["C", "3D Modeling", "Robotics"]
 ---
 import { YouTube } from 'astro-embed';
+import imageUrl from '../../../public/Exploded.png';
 
+## Summary
 This robot was created as a part of my master's thesis which centered around locating liquid-liquid interfaces. The Robot changes it's own volume to change its buoyancy to achieve upward and downward thrust depending on its current size.
 
 Here is a demo of the Robot in action:
-<YouTube id="https://youtu.be/WlTvShQmrV8" />
-
+<YouTube id="https://youtube.com/watch?v=j9o-O8pO3RM" />
 Aside from the novel form of locomotion, we also used the pressure difference between two probes to determine the density of the liquid the robot was submerged in. This density was then used, along with an absolute pressure reading, to determine the robots current depth in that liquid.
 This is even possible to do for many distinct liquid phases, given that the top most phase can submerge the entire differential pressure sensor assembly.
 
-This project posed many challenges of physics, 3D modeling, water tightening, and algorithms. They taught me a lot about how important traditional science with formulas can be leveraged to improve designs, and how difficult underwater mechanics really is.
+This project posed many challenges of physics, 3D modeling, water proofing, and algorithms. They taught me a lot about the importance of foundational physics and its laws can be leveraged to improve designs, and how difficult underwater mechanics really is.
+
+## Design
+The design of the robot might seem complex, but it is actually pretty simple. 
+The robot i fairly compact because of our choice to use an existing syringe for main body and gaskets, which meant that space was at a premium.
+Below is an exploded view of the robot divided into its main components.
+
+<img width={1020} height={510} src="/public/Exploded.png"/>
+The top cap, main housing, bottom cap and the two gaskets are the components used to keep inclose the components inside.
+The linear actuator is what drives the expansion and compression by moving the gaskets in relation to each other, the two caps block the two gaskets from extending too far and letting water inside.
+We used a rasberry pi pico W for control and reading sensors along with wireless communication.
+
+This makes up a watertight robot taking up 808 ml and weighing a minimum of 528
+g. It can increase its total volume by up to 102.64 ml, and therefore manipulate its
+own density to a minimum of 0.5798 kg/L and variable maximums based on additional
+ballast.
+
+The robot has a variety of sensors: 
+An absolute pressure sensor to measure the hydrostatic pressure outside the robot.
+A differential pressure sensor for reading the density of the outside liquid.
+A linear potentiometer to measure the extension of the linear actuator.
+
+## Extras
+Here is an early experiment where we test the water proofing with no internals inside aside from the linear actuator and ballast:
+<YouTube id="https://youtu.be/WlTvShQmrV8" />
