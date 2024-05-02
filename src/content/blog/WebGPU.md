@@ -12,4 +12,4 @@ I have not gotten very far on this project, but i will likely get back into it s
 
 ## Links
 
-The projects code can be found [here](https://www.github.com/madswolf/rust_webgpu) and a live version of the site can be found [here](https://webgpu.madswolf.dk/).
+The projects code can be found [here](https://github.com/madswolf/rust_wgpu) and a live version of the site can be found [here](https://webgpu.madswolf.dk/).
