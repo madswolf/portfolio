@@ -1,19 +1,27 @@
 ---
-title: 'Hide and Seek - An adverserial reinforcement learning project'
-description: 'A project where two adverserial groups were taught to hide and seek through reinforcement learning.'
-pubDate: 'Oct 16 2020'
-heroImage: '/ReinformentLearningRobots.png'
-tags: ["Python", "Robotics", "Computer vision"]
+title: 'Thymio hide and Seek - Robot learning project'
+description: 'A project where two adverserial groups were taught to hide and seek through reinforcement and evolutionary learning.'
+pubDate: 'Dec 19 2022'
+heroImage: '/thymio2.jpg'
+tags: ["Python", "Robotics", "Computer vision", "Evolutionary learning"]
 ---
 import { YouTube } from 'astro-embed';
 
 ## Summary
 
 This project was a part of the Advanced Robotics course on ITU. We used the Thymio robot platform to detect other robots with computer vision and created a simulation for the learning algorithm.
+The main goal of the project was to teach two groups, the seekers and the hiders, how to win a game of hide and seek.
+This was originally done with reinforcement learning, but we quickly moved on to evolutionary learning. 
 The learning algorithm did not use any traditional machine learning library, so the entire project was written by us.
 
+
+This project really hammered home the importance of evaluating the reality gap between a simulation and the reality of a robots environment.
+Simplifications that might seem innocuous would turn out to be very significant and simply adding more complex modeling will result in slowing the simulation down.
+Another takeaway was also the amount of creativity there is when tackling tasks with CV, our solution was not very elegant, but it was by far more reliable than most others. 
+
 Here is a visualization of the simulation for one of the generations groups.
-<YouTube id="https://youtube.com/watch?v=j9o-O8pO3RM" />
+<YouTube id="https://youtu.be/y-TpExDqhPk" />
+The red agent is the seeker, the square in the middle is a safe zone, and the dotted line is the outer bounds of the arena.
 
 ## Links
 The projects code can be found [here](https://github.com/madswolf/Advanced_robotics).
