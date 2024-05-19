@@ -1,0 +1,24 @@
+---
+title: 'Parallax Occlusion mapping'
+description: 'A project to implement parallax occlusion mapping in OpenGL'
+pubDate: 'May 9 2019'
+heroImage: '/Parallax_Occlusion_Mapping.png'
+tags: ["C++", "Graphics"]
+---
+import { YouTube } from 'astro-embed';
+
+## Summary
+
+This project was a part of my Graphics Programming course where i learned about rendering through OpenGL.
+
+The projects goal was to implement Parallax Occlusion Mapping, a technique similar to normal mapping, where light is bent differently by a flat surface to imitate real depth when the object is in reality flat.
+The new technique is to acutally let parts of the texture occlude other parts based on the viewpoint and to similarly occlude/block light from nearby lightsources.
+
+The project and the course itself taught me a lot about rendering graphics and the rendering pipeline, and also how weird results you get when you mess up even the smallest things.
+
+This video demo shows three different textures to show off shader and how you need to tune it a little:
+<YouTube id="https://www.youtube.com/watch?v=pmqf2lRVthA" />
+
+
+## Links
+The projects code can be found [here](https://github.com/madswolf/graphics-programming-2021)
