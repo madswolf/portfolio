@@ -2,7 +2,7 @@
 title: 'Deathrolling in WASM'
 description: 'A webassembly implementation of a gambling game found in WoW.'
 pubDate: 'Sep 23 2022'
-heroImage: '/Deathrolling.png'
+heroImage: '/Deathroll.png'
 tags: ["Rust"]
 ---
 ## Summary
