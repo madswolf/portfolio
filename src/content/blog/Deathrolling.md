@@ -1,5 +1,5 @@
 ---
-title: 'Deathrolling - WASM implementation of a game'
+title: 'Deathrolling in WASM'
 description: 'A webassembly implementation of a gambling game found in WoW.'
 pubDate: 'Sep 23 2022'
 heroImage: '/Deathrolling.png'
