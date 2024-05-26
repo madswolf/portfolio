@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import ResponsivePDF from '../components/ResponsivePDF.astro';
 ---
 
 <Layout
@@ -10,4 +11,9 @@ import Layout from '../layouts/BlogPost.astro';
 >
 	I'm Mads Wolf Jespersen, a software developer for <a href="https://www.cvation.com/"> cVation </a> by day, and by night i tinker with everything from IOT and robotics to React and WebGPU in projects that can be found <a href="/projects">here</a>.
 	On this page there is a bit more detailed info about me, such as my CV and other miscelaneous info.
+	<br/>
+	<br/>
+	My CV can be seen below.
+
+	<ResponsivePDF src="/cv.pdf" />
 </Layout>

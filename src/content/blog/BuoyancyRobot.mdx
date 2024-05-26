@@ -6,6 +6,7 @@ heroImage: '/model.png'
 tags: ["C", "3D Modeling", "Robotics"]
 ---
 import { YouTube } from 'astro-embed';
+import ResponsivePDF from '../../components/ResponsivePDF.astro';
 
 ## Summary
 This robot was created as a part of my master's thesis which centered around locating liquid-liquid interfaces. The Robot changes it's own volume to change its buoyancy to achieve upward and downward thrust depending on its current size.
@@ -40,3 +41,9 @@ A linear potentiometer to measure the extension of the linear actuator.
 ## Extras
 Here is an early experiment where we test the water proofing with no internals inside aside from the linear actuator and ballast:
 <YouTube id="https://youtu.be/WlTvShQmrV8" />
+
+If you are interested, you can read our thesis here.
+However, it was not really meant for a general audiences when written, so keep that in mind if you decide to read it.
+
+
+<ResponsivePDF src="/Thesis.pdf" />
