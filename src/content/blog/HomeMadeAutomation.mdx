@@ -7,21 +7,37 @@ tags: ["Python", "C"]
 ---
 import { YouTube } from 'astro-embed';
 
-## Summary
+## Overview
 
-This project is about my exploration of IOT and Smart home technologies through automating or smartifying parts of my home.
-The project does not make use of common tools like HomeAssistant as i wanted to create my own logic for the automation and learn a few things along the way. 
+This project documents my journey into IoT and smart home technologies by automating various aspects of my home.
+Rather than using common tools like HomeAssistant, 
+I chose to create my own logic for automation to deepen my understanding and gain hands-on experience.
 
-The project is mainly interacted with through a python API that exposes commands for different parts of the home, like lights, TV, Speakers.
-This API was mainly used by myself to use my phone as a universal remote by issuing commands from it, but there were also logic for automatically turning light on and off when i left or came home.
+The core of this project is a Python API that controls different devices in my home, such as lights, TV, and speakers.
+This API allowed me to use my phone as a universal remote, issuing commands to these devices. 
+The remote would envoke the API through HTTP with a automation app called tasker, which can be seen in the thumbnail.
+Additionally, I implemented logic for automating tasks, such as turning lights on and off when I leave or return home.
 
-During the project i learned about different communication technologies like bluetooth, Infrared, ZigBee and LoRaWAN.
+Throughout the project, I experimented with several communication technologies, including:
+- Bluetooth
+- Infrared
+- ZigBee
+- LoRaWAN
+- Wifi
+
+## Fun with the Clown API
+
+During the COVID-19 pandemic, I added features to play sounds through a smart speaker and made the api partly open. 
+Friends could send messages that were converted to speech, allowing them to say hello or remind me of something. 
+These features and open API for my lights etc, was often used to surprise or annoy me, leading to its playful name, the Clown API. 
+Despite the mischief, it added an element of fun to the project.
+
+## Retrospective
+
+Looking back, this project was a rewarding experience that helped me understand IoT and smart home technologies. 
+Creating a custom automation logic taught me a lot about the intricacies of different communication protocols and device integrations.
+The playful interactions with the Clown API highlighted the social and entertainment potential of smart home setups. 
+Overall, the project was both educational and enjoyable, providing a solid foundation for future explorations in smart home technology.
 
 ## Links
 The projects code can be found [here](https://github.com/madswolf/ClownAPI)
-
-## Extras
-During the Covid19 pandemic i also implemented features relating to playing sounds through a smartified speaker.
-This allowed my friends to send messages that were spoken through the speaker with TTS to say hello or remind me of something.
-More often than not, this API was actually used to annoy or surprise me, hence the name Clown API. 
-A lot of shenanigans were pulled with that API, but it was all in good fun.
