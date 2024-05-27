@@ -7,18 +7,30 @@ tags: ["C++", "Graphics"]
 ---
 import { YouTube } from 'astro-embed';
 
-## Summary
+## Overview
 
-This project was a part of my Graphics Programming course where i learned about rendering through OpenGL.
+As part of my Graphics Programming course, I undertook a project to learn about rendering using OpenGL.
+The goal was to implement a novel rendering technique and i choose Parallax Occlusion Mapping (POM), 
+a technique that simulates depth on flat surfaces by adjusting how light interacts with the texture.
 
-The projects goal was to implement Parallax Occlusion Mapping, a technique similar to normal mapping, where light is bent differently by a flat surface to imitate real depth when the object is in reality flat.
-The new technique is to acutally let parts of the texture occlude other parts based on the viewpoint and to similarly occlude/block light from nearby lightsources.
+## Parallax Occlusion Mapping Explained
 
-The project and the course itself taught me a lot about rendering graphics and the rendering pipeline, and also how weird results you get when you mess up even the smallest things.
+Parallax Occlusion Mapping is an advanced technique similar to normal mapping. 
+While normal mapping alters the surface normals to create the illusion of depth, 
+POM goes a step further by allowing parts of the texture to occlude others based on the viewpoint. 
+This means that some parts of the texture can block light or be hidden from view, 
+enhancing the illusion of real depth on a flat surface.
+This even extends to lighting where shadows can be cast by parts of thesurface that would be occluded from the light sources view.
 
-This video demo shows three different textures to show off the shader and how you need to tune it a little:
-<YouTube id="https://www.youtube.com/watch?v=pmqf2lRVthA" />
+## Insights
+
+Throughout this project, I gained a deeper understanding of graphics rendering and the rendering pipeline. 
+I also learned that even small errors can lead to significant and often strange visual artifacts. 
+This experience highlighted the importance of precision and attention to detail in graphics programming.
 
 
 ## Links
+
+This video demo showcases three different textures to highlight the POM shader. It also demonstrates the necessity of fine-tuning the shader for different textures to achieve the best results.
+<YouTube id="https://www.youtube.com/watch?v=pmqf2lRVthA" />
 The projects code can be found [here](https://github.com/madswolf/graphics-programming-2021)

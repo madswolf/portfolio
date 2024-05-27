@@ -10,18 +10,21 @@ tags: ["Rust"]
 This website is a Rust and webassembly implementation of the gambling game from WoW.
 The game is not that complex, but is hard to explain so lets go through an example game.
 
-Two players have decided to bet 10 dollars and the winner will be decided by playing a game of deathrolling.
-The two players choose a number as their starting number, lets say they choose 500.
-The first of the two players then rolls a number between 1 and the current number, which is 500.
-The result is the number 353.
-The second player then rolls a number between 1 and this new number, which is 353.
-This continues until one of the two players roll a 1.
+## Understanding Deathrolling
+
+Two players agree to bet a certain amount, say $10, and decide the winner through a game of Deathrolling. They start by choosing an initial number, for instance, 500.
+
+- First Roll: Player 1 rolls a random number between 1 and 500, resulting in 353.
+- Second Roll: Player 2 then rolls a random number between 1 and 353.
+- Subsequent Rolls: The players continue this process, each rolling a number between 1 and the most recent roll result.
+- Game End: The game continues until a player rolls a 1, at which point that player loses, and the other player wins the bet.
 
 To play the game on this website, you enter a number and take turns to click on the screen to trigger a roll. The first person to roll a 1 is the loser.
 
-The main technology used is a web framework by the name Yew, which is a react like framework.
-The purpose of this project was to try out Rust and see how far web development had come with Rust and WASM.
-The developer experience was good, but the documentation left something to be desired.
+## Insights
+
+The implementation leverages Yew, a React-like web framework for Rust. The project aimed to explore Rust's capabilities in web development with WASM. While the developer experience was generally positive, the documentation for these technologies could be improved.
+
 It did leave me wanting to do more Rust development, which later led into the WebGPU project seen [here](https://madswolf.dk/projects/webgpu).
 
 ## Links
