@@ -4,6 +4,7 @@ description: 'A webassembly implementation of a gambling game found in WoW.'
 pubDate: 'Sep 23 2022'
 heroImage: '/Deathroll.png'
 tags: ["Rust"]
+sortNumber: 15
 ---
 ## Summary
 

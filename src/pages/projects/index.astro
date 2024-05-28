@@ -5,10 +5,10 @@ import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../../components/FormattedDate.astro';
-import Tag from '../../components/TagLine.astro';
+import Tagline from '../../components/TagLine.astro';
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+const posts = (await getCollection('project')).sort(
+	(a, b) => a.data.sortNumber - b.data.sortNumber
 );
 ---
 
@@ -109,7 +109,7 @@ const posts = (await getCollection('blog')).sort(
 								<a href={`/projects/${post.slug}/`}>
 									<img width={480} height={250} src={post.data.heroImage} alt="" />
 									<h4 class="title">{post.data.title}</h4>
-									<Tag tags={post.data.tags}></Tag>
+									<Tagline tags={post.data.tags}></Tagline>
 								</a>
 							</li>
 						))
