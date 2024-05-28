@@ -8,18 +8,25 @@ tags: ["C#", "SQL", "Graphics"]
 
 ## Summary
 
-This website is for generating random memes based on components from user submitted memes.
-The site lets users upload memes in three parts, a picture, a toptext, and a bottom text. All these parts gets stored in a postgresql database.
+MemeApi is a re-write of the backend for MemeSite, a site for generating random memes using components from user-submitted content. 
+Users can upload memes in three parts: a picture, top text, and bottom text. 
+These components are stored in a PostgreSQL database.
 
-This project was originally a project to try out python and flask but it very quickly became a project for me to try out Typescript, Node.js, and React.
-I used Postgresql for the database and technologies like Typeorm Typescript, and Express for the backend api, and finally i used React and Typescript for the frontent.
-The project created very early in my studies, which means i learned a lot, but i also made mistakes. Which is why i later remade the backend in C# and EF-core. That project can be found [here](https://madswolf.dk/projects/memeapi). 
+MemeApi is built with ASP.Net, EF-Core, and PostgreSQL, with additional features like a dicord webhook, and mailing service where daily content is posted.
+Along with these features, i also expanded the backend to include topics, moderations tools and other minor features. 
+
+## Insights
+
+At my day job, I work on a platform where much of the plumbing and infrastructure is pre-handled.
+So one of the main motivators for the project was to give myself an opportunity to make my own architectural decisions and gain hands-on experience with setting up the entire backend infrastructure from scratch. 
+I learned valuable lessons about database management, integrating frontend and backend, migrations, secrets, deployment pipelines etc.
+This hands-on experience has helped solidify my understanding of full-stack development and devops principals.
 
 ## Links
-The projects code can be found [here](https://github.com/madswolf/memefrontend).
+The projects code can be found [here](https://github.com/madswolf/MemeApi).
 
 ## Extras
 I also made an integration with a minecraft mod called computercraft where a meme from the site would be rendered in game on some monitors:
-<img width={1020} height={510} src="/minecraftmeme.png"/>
+<img src="/minecraftmeme.png"/>
 
 This integration was written in lua on the in game terminal, and i was unfortunate enough to lose this world, so the code is lost to time.

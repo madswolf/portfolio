@@ -7,7 +7,20 @@ tags: ["Python", "C", "Robotics", ]
 ---
 import { YouTube } from 'astro-embed';
 
-This project was about using detecting and manipulating objects on a mesh of threads by measuring and changing the tension of threads in the mesh. 
+This project was about experementing with detecting and manipulating objects on a mesh of threads
+by measuring and changing the tension of threads in the mesh. 
+The implemented prototpye consists of crossing strings forming a grid of square cells, 
+with each string connected to a force sensor and a motor to adjust tension.
+Objects resting in these cells cause tension variations in the strings, 
+which are detected by the sensors and used to estimate the objects' positions. 
+By adjusting the tension in nearby strings, objects can be moved across the mesh.
 
+
+The project demonstrates the feasibility of using a mesh of tensioned strings for object detection and manipulation,
+achieving high precision and accuracy under optimal conditions. The idea was to use it as an alternative to traditional systems like converyor belts.
+The advantage of this type of system could be the precision of detection and manipulation, but also the option to manipulate objects of odd shapes, which conveyor belts are not very suited towards.
+However, challenges remain, such as handling multiple objects simultaneously and improving consistency in non-optimal conditions.
+
+## Links
 This is a demonstration of the visualization of the robots sensors to detect objects on the mesh.
 <YouTube id="https://youtu.be/1tymvpE0Irc" />
