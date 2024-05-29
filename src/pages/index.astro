@@ -9,16 +9,86 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			main{
+				width: 50%;
+			}
+
+			.text {
+				flex: 3;
+				padding-right: 20px;
+				max-width: 40%;
+			}
+
+			.image {
+				flex: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.image img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 8px;
+			}
+			@media (min-width: 769px) {
+				h1 {
+					font-size: 5em;
+					color: #144EE3;
+				}
+				.double_column_container {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: flex-start;
+					padding: 20px;
+				}
+   				 .single_column_container {
+   				   display: none;
+   				 }
+  			}
+  			@media (max-width: 768px) {
+				h1 {
+					color: #144EE3;
+				}
+  			  .double_column_container {
+  			    display: none;
+  			  }
+  			  .single_column_container {
+  			    display: block;
+  			  }
+  			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>Hello!</h1>
-			<p>
-				Welcome to my personal website! Here you can find information about me, my skills, and the projects I have made.
-				<img src="/Profile_Picture.jpg">
-				
-				I am Mads Wolf Jespersen, a software developer for <a href="https://www.cvation.com/">cVation</a>. By night, I tinker with everything from IoT and robotics to React and WebGPU in projects that can be found <a href="/projects">here</a>.</p>
+			<div class="double_column_container">
+				<div class="text">
+					<h1>Hello!</h1>
+					<p>Welcome to my personal website! Here you can find information about me, my skills, and the projects I have made.</p>
+
+					<p>I am Mads Wolf Jespersen, a software developer for <a href="https://www.cvation.com/">cVation</a>. By night, I tinker with everything from IoT and robotics to React and WebGPU in projects that can be found <a href="/projects">here</a>.</p>
+				</div>
+				<div class="image">
+					<img src="/Profile_Picture_Cropped.jpg" alt="Profile Picture of Mads Wolf Jespersen">
+				</div>
+			</div>
+			<div class="single_column_container">
+				<h1>Hello!</h1>
+				<p>
+					Welcome to my personal website! Here you can find information about me, my skills, and the projects I have made.
+					<img src="/Profile_Picture.jpg">
+
+					I am Mads Wolf Jespersen, a software developer for <a href="https://www.cvation.com/">cVation</a>. By night, I tinker with everything from IoT and robotics to React and WebGPU in projects that can be found <a href="/projects">here</a>.
+				</p>
+			</div>
 		</main>
 		<Footer />
 	</body>
