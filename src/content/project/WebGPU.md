@@ -2,7 +2,7 @@
 title: 'Rust WebGPU graphics'
 description: 'A WebGPU rendering engine.'
 pubDate: 'Jan 19 2024'
-heroImage: '/WebGPU.png'
+heroImage: '/WebGPU.webp'
 tags: ["Rust", "Graphics"]
 sortNumber: 7
 ---

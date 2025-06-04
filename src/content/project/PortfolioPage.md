@@ -2,7 +2,7 @@
 title: 'Portfolio page'
 description: 'This very page!'
 pubDate: 'May 28 2024'
-heroImage: '/PortfolioPage.png'
+heroImage: '/PortfolioPage.webp'
 tags: ["Typescript"]
 sortNumber: 9
 ---

@@ -2,7 +2,7 @@
 title: 'Memebot discord bot'
 description: 'A python implementation of a discord bot for interacting with the memesite API'
 pubDate: 'Mar 20 2021'
-heroImage: '/Memebot.png'
+heroImage: '/Memebot.webp'
 tags: ["Python", "Graphics"]
 sortNumber: 100
 ---

@@ -2,7 +2,7 @@
 title: 'Kattis problems'
 description: 'A collection of solutions for the programming problems on Kattis'
 pubDate: 'Sep 23 2022'
-heroImage: '/Kattis.png'
+heroImage: '/Kattis.webp'
 tags: ["F#", "Java", "C#", "Python", "Rust"]
 sortNumber: 17
 ---
